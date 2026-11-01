@@ -7,6 +7,7 @@ compare your numbers with ours.
 | Folder | Article | Run |
 |---|---|---|
 | [churn-model-intervention-gap](churn-model-intervention-gap/) | Your Churn Model Works. Your Churn Intervention Doesn't. | see below |
+| [first-model-should-be-embarrassing](first-model-should-be-embarrassing/) | Your First Model Should Be Embarrassing | see below |
 | [vector-database-not-covered](vector-database-not-covered/) | Your Vector Database Thinks "Not Covered" Means "Covered" | `uv run negation.py` |
 
 All scripts run with [uv](https://docs.astral.sh/uv/).
@@ -23,6 +24,16 @@ uv run --with pandas --with scikit-learn python risk_vs_uplift.py hillstrom.csv 
 ```
 
 Each line of `results.jsonl` is one random 50/50 split (seed 0–9).
+
+## first-model-should-be-embarrassing
+
+A baseline ladder (majority class → logistic regression → default gradient boosting → tuned
+gradient boosting) on six PMLB datasets. Results for seeds 0–3 are in `results.jsonl`:
+
+```bash
+cd first-model-should-be-embarrassing
+uv run --with pmlb --with scikit-learn --with scipy python ladder.py adult,churn,spambase,magic,hypothyroid,phoneme 0
+```
 
 ## vector-database-not-covered
 
