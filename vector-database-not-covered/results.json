@@ -1,0 +1,1581 @@
+{
+ "n_items": 40,
+ "pairs": {
+  "sentence-transformers/all-MiniLM-L6-v2": {
+   "mean_paraphrase": 0.84327632188797,
+   "mean_negation": 0.8515937924385071,
+   "negation_closer": 0.525,
+   "auroc": 0.463125
+  },
+  "BAAI/bge-base-en-v1.5": {
+   "mean_paraphrase": 0.915431022644043,
+   "mean_negation": 0.8201131820678711,
+   "negation_closer": 0.025,
+   "auroc": 0.9412499999999999
+  },
+  "intfloat/e5-base-v2": {
+   "mean_paraphrase": 0.9597665667533875,
+   "mean_negation": 0.95708829164505,
+   "negation_closer": 0.475,
+   "auroc": 0.5700000000000001
+  },
+  "thenlper/gte-base": {
+   "mean_paraphrase": 0.9638671875,
+   "mean_negation": 0.94580078125,
+   "negation_closer": 0.15,
+   "auroc": 0.8059375000000002
+  },
+  "mixedbread-ai/mxbai-embed-large-v1": {
+   "mean_paraphrase": 0.92138671875,
+   "mean_negation": 0.77734375,
+   "negation_closer": 0.0,
+   "auroc": 0.9771875
+  },
+  "Qwen/Qwen3-Embedding-0.6B": {
+   "mean_paraphrase": 0.8722711801528931,
+   "mean_negation": 0.8835369348526001,
+   "negation_closer": 0.55,
+   "auroc": 0.431875
+  }
+ },
+ "cache": {
+  "sentence-transformers/all-MiniLM-L6-v2": {
+   "mean_paraphrase": 0.7378008365631104,
+   "mean_negation": 0.9588216543197632,
+   "negation_closer": 1.0,
+   "auroc": 0.011875000000000004,
+   "threshold_95": 0.5282726287841797,
+   "negated_hits_at_threshold": 1.0,
+   "paraphrase_hits_at_0_90": 0.075,
+   "negated_hits_at_0_90": 0.975,
+   "dental": {
+    "paraphrase": 0.8474642038345337,
+    "negation": 0.9716124534606934
+   }
+  },
+  "BAAI/bge-base-en-v1.5": {
+   "mean_paraphrase": 0.842410683631897,
+   "mean_negation": 0.9332544207572937,
+   "negation_closer": 0.9,
+   "auroc": 0.096875,
+   "threshold_95": 0.7192472815513611,
+   "negated_hits_at_threshold": 1.0,
+   "paraphrase_hits_at_0_90": 0.15,
+   "negated_hits_at_0_90": 0.875,
+   "dental": {
+    "paraphrase": 0.892042875289917,
+    "negation": 0.9155515432357788
+   }
+  },
+  "intfloat/e5-base-v2": {
+   "mean_paraphrase": 0.9173725247383118,
+   "mean_negation": 0.972183883190155,
+   "negation_closer": 0.925,
+   "auroc": 0.053750000000000006,
+   "threshold_95": 0.8624753355979919,
+   "negated_hits_at_threshold": 1.0,
+   "paraphrase_hits_at_0_90": 0.7,
+   "negated_hits_at_0_90": 1.0,
+   "dental": {
+    "paraphrase": 0.956773579120636,
+    "negation": 0.9694203734397888
+   }
+  },
+  "thenlper/gte-base": {
+   "mean_paraphrase": 0.9189453125,
+   "mean_negation": 0.9736328125,
+   "negation_closer": 0.9,
+   "auroc": 0.06718750000000001,
+   "threshold_95": 0.85791015625,
+   "negated_hits_at_threshold": 1.0,
+   "paraphrase_hits_at_0_90": 0.725,
+   "negated_hits_at_0_90": 1.0,
+   "dental": {
+    "paraphrase": 0.94482421875,
+    "negation": 0.9697265625
+   }
+  },
+  "mixedbread-ai/mxbai-embed-large-v1": {
+   "mean_paraphrase": 0.8291015625,
+   "mean_negation": 0.888671875,
+   "negation_closer": 0.775,
+   "auroc": 0.2471875,
+   "threshold_95": 0.6650390625,
+   "negated_hits_at_threshold": 1.0,
+   "paraphrase_hits_at_0_90": 0.125,
+   "negated_hits_at_0_90": 0.375,
+   "dental": {
+    "paraphrase": 0.93994140625,
+    "negation": 0.8701171875
+   }
+  },
+  "Qwen/Qwen3-Embedding-0.6B": {
+   "mean_paraphrase": 0.813987135887146,
+   "mean_negation": 0.9290652275085449,
+   "negation_closer": 0.9,
+   "auroc": 0.026249999999999996,
+   "threshold_95": 0.6994446516036987,
+   "negated_hits_at_threshold": 1.0,
+   "paraphrase_hits_at_0_90": 0.05,
+   "negated_hits_at_0_90": 0.85,
+   "dental": {
+    "paraphrase": 0.8745336532592773,
+    "negation": 0.920754075050354
+   }
+  }
+ },
+ "retrieval": {
+  "BM25 (keeps 'not')": {
+   "pairwise": 0.8375,
+   "paired": 0.725,
+   "recall_at_1": 0.8625,
+   "pos_pairwise": 0.9,
+   "neg_pairwise": 0.775
+  },
+  "BM25 (Lucene English stop words)": {
+   "pairwise": 0.5125,
+   "paired": 0.45,
+   "recall_at_1": 0.725,
+   "pos_pairwise": 0.525,
+   "neg_pairwise": 0.5
+  },
+  "dense: sentence-transformers/all-MiniLM-L6-v2": {
+   "pairwise": 0.5875,
+   "paired": 0.175,
+   "recall_at_1": 0.5875,
+   "pos_pairwise": 0.9,
+   "neg_pairwise": 0.275
+  },
+  "hybrid RRF: sentence-transformers/all-MiniLM-L6-v2 + BM25": {
+   "pairwise": 0.6,
+   "paired": 0.2,
+   "recall_at_1": 0.65,
+   "pos_pairwise": 0.875,
+   "neg_pairwise": 0.325
+  },
+  "hybrid RRF: sentence-transformers/all-MiniLM-L6-v2 + BM25 (stop words)": {
+   "pairwise": 0.4625,
+   "paired": 0.125,
+   "recall_at_1": 0.5875,
+   "pos_pairwise": 0.725,
+   "neg_pairwise": 0.2
+  },
+  "dense: BAAI/bge-base-en-v1.5": {
+   "pairwise": 0.925,
+   "paired": 0.85,
+   "recall_at_1": 0.925,
+   "pos_pairwise": 1.0,
+   "neg_pairwise": 0.85
+  },
+  "hybrid RRF: BAAI/bge-base-en-v1.5 + BM25": {
+   "pairwise": 0.825,
+   "paired": 0.65,
+   "recall_at_1": 0.85,
+   "pos_pairwise": 0.95,
+   "neg_pairwise": 0.7
+  },
+  "hybrid RRF: BAAI/bge-base-en-v1.5 + BM25 (stop words)": {
+   "pairwise": 0.7,
+   "paired": 0.4,
+   "recall_at_1": 0.8,
+   "pos_pairwise": 0.8,
+   "neg_pairwise": 0.6
+  },
+  "dense: intfloat/e5-base-v2": {
+   "pairwise": 0.9625,
+   "paired": 0.925,
+   "recall_at_1": 0.9625,
+   "pos_pairwise": 1.0,
+   "neg_pairwise": 0.925
+  },
+  "hybrid RRF: intfloat/e5-base-v2 + BM25": {
+   "pairwise": 0.8625,
+   "paired": 0.725,
+   "recall_at_1": 0.8875,
+   "pos_pairwise": 0.95,
+   "neg_pairwise": 0.775
+  },
+  "hybrid RRF: intfloat/e5-base-v2 + BM25 (stop words)": {
+   "pairwise": 0.75,
+   "paired": 0.5,
+   "recall_at_1": 0.85,
+   "pos_pairwise": 0.8,
+   "neg_pairwise": 0.7
+  },
+  "dense: thenlper/gte-base": {
+   "pairwise": 0.85,
+   "paired": 0.7,
+   "recall_at_1": 0.85,
+   "pos_pairwise": 1.0,
+   "neg_pairwise": 0.7
+  },
+  "hybrid RRF: thenlper/gte-base + BM25": {
+   "pairwise": 0.7625,
+   "paired": 0.525,
+   "recall_at_1": 0.7875,
+   "pos_pairwise": 0.95,
+   "neg_pairwise": 0.575
+  },
+  "hybrid RRF: thenlper/gte-base + BM25 (stop words)": {
+   "pairwise": 0.6625,
+   "paired": 0.35,
+   "recall_at_1": 0.7625,
+   "pos_pairwise": 0.8,
+   "neg_pairwise": 0.525
+  },
+  "dense: mixedbread-ai/mxbai-embed-large-v1": {
+   "pairwise": 0.8875,
+   "paired": 0.775,
+   "recall_at_1": 0.8875,
+   "pos_pairwise": 1.0,
+   "neg_pairwise": 0.775
+  },
+  "hybrid RRF: mixedbread-ai/mxbai-embed-large-v1 + BM25": {
+   "pairwise": 0.8,
+   "paired": 0.6,
+   "recall_at_1": 0.825,
+   "pos_pairwise": 0.95,
+   "neg_pairwise": 0.65
+  },
+  "hybrid RRF: mixedbread-ai/mxbai-embed-large-v1 + BM25 (stop words)": {
+   "pairwise": 0.6875,
+   "paired": 0.4,
+   "recall_at_1": 0.7875,
+   "pos_pairwise": 0.8,
+   "neg_pairwise": 0.575
+  },
+  "dense: Qwen/Qwen3-Embedding-0.6B": {
+   "pairwise": 0.8875,
+   "paired": 0.775,
+   "recall_at_1": 0.8875,
+   "pos_pairwise": 0.975,
+   "neg_pairwise": 0.8
+  },
+  "hybrid RRF: Qwen/Qwen3-Embedding-0.6B + BM25": {
+   "pairwise": 0.825,
+   "paired": 0.725,
+   "recall_at_1": 0.8625,
+   "pos_pairwise": 0.925,
+   "neg_pairwise": 0.725
+  },
+  "hybrid RRF: Qwen/Qwen3-Embedding-0.6B + BM25 (stop words)": {
+   "pairwise": 0.7,
+   "paired": 0.525,
+   "recall_at_1": 0.8125,
+   "pos_pairwise": 0.775,
+   "neg_pairwise": 0.625
+  },
+  "cross-encoder alone: cross-encoder/ms-marco-MiniLM-L-6-v2": {
+   "pairwise": 0.975,
+   "paired": 0.95,
+   "recall_at_1": 0.975,
+   "pos_pairwise": 0.975,
+   "neg_pairwise": 0.975
+  },
+  "dense top-10 + cross-encoder/ms-marco-MiniLM-L-6-v2: sentence-transformers/all-MiniLM-L6-v2": {
+   "pairwise": 0.975,
+   "paired": 0.95,
+   "recall_at_1": 0.975,
+   "pos_pairwise": 0.975,
+   "neg_pairwise": 0.975
+  },
+  "dense top-10 + cross-encoder/ms-marco-MiniLM-L-6-v2: BAAI/bge-base-en-v1.5": {
+   "pairwise": 0.975,
+   "paired": 0.95,
+   "recall_at_1": 0.975,
+   "pos_pairwise": 0.975,
+   "neg_pairwise": 0.975
+  },
+  "dense top-10 + cross-encoder/ms-marco-MiniLM-L-6-v2: intfloat/e5-base-v2": {
+   "pairwise": 0.975,
+   "paired": 0.95,
+   "recall_at_1": 0.975,
+   "pos_pairwise": 0.975,
+   "neg_pairwise": 0.975
+  },
+  "dense top-10 + cross-encoder/ms-marco-MiniLM-L-6-v2: thenlper/gte-base": {
+   "pairwise": 0.975,
+   "paired": 0.95,
+   "recall_at_1": 0.975,
+   "pos_pairwise": 0.975,
+   "neg_pairwise": 0.975
+  },
+  "dense top-10 + cross-encoder/ms-marco-MiniLM-L-6-v2: mixedbread-ai/mxbai-embed-large-v1": {
+   "pairwise": 0.975,
+   "paired": 0.95,
+   "recall_at_1": 0.975,
+   "pos_pairwise": 0.975,
+   "neg_pairwise": 0.975
+  },
+  "dense top-10 + cross-encoder/ms-marco-MiniLM-L-6-v2: Qwen/Qwen3-Embedding-0.6B": {
+   "pairwise": 0.975,
+   "paired": 0.95,
+   "recall_at_1": 0.975,
+   "pos_pairwise": 0.975,
+   "neg_pairwise": 0.975
+  },
+  "cross-encoder alone: BAAI/bge-reranker-base": {
+   "pairwise": 0.975,
+   "paired": 0.95,
+   "recall_at_1": 0.975,
+   "pos_pairwise": 0.95,
+   "neg_pairwise": 1.0
+  },
+  "dense top-10 + BAAI/bge-reranker-base: sentence-transformers/all-MiniLM-L6-v2": {
+   "pairwise": 0.975,
+   "paired": 0.95,
+   "recall_at_1": 0.975,
+   "pos_pairwise": 0.95,
+   "neg_pairwise": 1.0
+  },
+  "dense top-10 + BAAI/bge-reranker-base: BAAI/bge-base-en-v1.5": {
+   "pairwise": 0.975,
+   "paired": 0.95,
+   "recall_at_1": 0.975,
+   "pos_pairwise": 0.95,
+   "neg_pairwise": 1.0
+  },
+  "dense top-10 + BAAI/bge-reranker-base: intfloat/e5-base-v2": {
+   "pairwise": 0.975,
+   "paired": 0.95,
+   "recall_at_1": 0.975,
+   "pos_pairwise": 0.95,
+   "neg_pairwise": 1.0
+  },
+  "dense top-10 + BAAI/bge-reranker-base: thenlper/gte-base": {
+   "pairwise": 0.975,
+   "paired": 0.95,
+   "recall_at_1": 0.975,
+   "pos_pairwise": 0.95,
+   "neg_pairwise": 1.0
+  },
+  "dense top-10 + BAAI/bge-reranker-base: mixedbread-ai/mxbai-embed-large-v1": {
+   "pairwise": 0.975,
+   "paired": 0.95,
+   "recall_at_1": 0.975,
+   "pos_pairwise": 0.95,
+   "neg_pairwise": 1.0
+  },
+  "dense top-10 + BAAI/bge-reranker-base: Qwen/Qwen3-Embedding-0.6B": {
+   "pairwise": 0.975,
+   "paired": 0.95,
+   "recall_at_1": 0.975,
+   "pos_pairwise": 0.95,
+   "neg_pairwise": 1.0
+  }
+ },
+ "examples": {
+  "sentence-transformers/all-MiniLM-L6-v2": [
+   {
+    "pos": "The Gold plan covers dental implants.",
+    "para": 0.8754628896713257,
+    "neg": 0.826176106929779
+   },
+   {
+    "pos": "The Family plan includes routine eye exams.",
+    "para": 0.9191603660583496,
+    "neg": 0.876835823059082
+   },
+   {
+    "pos": "Physiotherapy is reimbursed under the Plus plan.",
+    "para": 0.8673715591430664,
+    "neg": 0.9049181938171387
+   },
+   {
+    "pos": "The Premier plan covers mental health counselling.",
+    "para": 0.9441693425178528,
+    "neg": 0.6202777624130249
+   },
+   {
+    "pos": "Water damage from a burst pipe is covered by the Complete home policy.",
+    "para": 0.8542236089706421,
+    "neg": 0.8905158042907715
+   },
+   {
+    "pos": "The Complete home policy covers accidental damage to televisions.",
+    "para": 0.8043017387390137,
+    "neg": 0.8186684846878052
+   },
+   {
+    "pos": "Loss of rent is included in the Landlord policy.",
+    "para": 0.8905385732650757,
+    "neg": 0.8536537885665894
+   },
+   {
+    "pos": "The Coastal policy covers flood damage.",
+    "para": 0.8539291620254517,
+    "neg": 0.8850210905075073
+   },
+   {
+    "pos": "The Annual travel policy covers winter sports.",
+    "para": 0.8087879419326782,
+    "neg": 0.7279669046401978
+   },
+   {
+    "pos": "Cancellation for a pre-existing condition is covered under the Explorer policy.",
+    "para": 0.8427973985671997,
+    "neg": 0.8325701355934143
+   },
+   {
+    "pos": "The Explorer policy reimburses delayed baggage expenses.",
+    "para": 0.817574143409729,
+    "neg": 0.834152340888977
+   },
+   {
+    "pos": "The Comprehensive car policy covers windscreen repairs.",
+    "para": 0.9135686159133911,
+    "neg": 0.7809831500053406
+   },
+   {
+    "pos": "A courtesy car is provided under the Comprehensive car policy.",
+    "para": 0.641757607460022,
+    "neg": 0.7946972846984863
+   },
+   {
+    "pos": "Driving for work is covered by the Business car policy.",
+    "para": 0.8372454643249512,
+    "neg": 0.8323862552642822
+   },
+   {
+    "pos": "Sale items can be returned at the Outlet store.",
+    "para": 0.8125662803649902,
+    "neg": 0.768691897392273
+   },
+   {
+    "pos": "The online shop refunds return shipping costs.",
+    "para": 0.7736065983772278,
+    "neg": 0.8282750844955444
+   },
+   {
+    "pos": "Opened software is refundable in the Electronics department.",
+    "para": 0.7528332471847534,
+    "neg": 0.9321345686912537
+   },
+   {
+    "pos": "The Enterprise tier includes single sign-on.",
+    "para": 0.9611559510231018,
+    "neg": 0.8530977964401245
+   },
+   {
+    "pos": "API access is available on the Pro tier.",
+    "para": 0.8390737771987915,
+    "neg": 0.8135372400283813
+   },
+   {
+    "pos": "Commercial use is permitted under the Business licence.",
+    "para": 0.7419856190681458,
+    "neg": 0.8796094655990601
+   },
+   {
+    "pos": "The Enterprise tier comes with a 99.9% uptime guarantee.",
+    "para": 0.7077542543411255,
+    "neg": 0.8137400150299072
+   },
+   {
+    "pos": "Data exports are unlimited on the Scale tier.",
+    "para": 0.814010500907898,
+    "neg": 0.8902883529663086
+   },
+   {
+    "pos": "Parental leave is paid for full-time staff.",
+    "para": 0.9585867524147034,
+    "neg": 0.9263023138046265
+   },
+   {
+    "pos": "Permanent employees are eligible for the annual bonus.",
+    "para": 0.8865382671356201,
+    "neg": 0.8218095302581787
+   },
+   {
+    "pos": "Remote work is allowed for the London office.",
+    "para": 0.6989021301269531,
+    "neg": 0.8683428764343262
+   },
+   {
+    "pos": "Conference travel is reimbursed for senior engineers.",
+    "para": 0.84932541847229,
+    "neg": 0.7629610300064087
+   },
+   {
+    "pos": "The Flex fare includes a checked bag.",
+    "para": 0.7949240207672119,
+    "neg": 0.9020575284957886
+   },
+   {
+    "pos": "Date changes are free on the Flex fare.",
+    "para": 0.8058344125747681,
+    "neg": 0.9708767533302307
+   },
+   {
+    "pos": "Lounge access is included with business class.",
+    "para": 0.8122109174728394,
+    "neg": 0.9007599353790283
+   },
+   {
+    "pos": "Battery replacement is covered by the extended warranty.",
+    "para": 0.891294538974762,
+    "neg": 0.9609276056289673
+   },
+   {
+    "pos": "The extended warranty covers accidental drops.",
+    "para": 0.8117467164993286,
+    "neg": 0.9538266658782959
+   },
+   {
+    "pos": "Repairs abroad are covered by the manufacturer warranty.",
+    "para": 0.903941810131073,
+    "neg": 0.9503936171531677
+   },
+   {
+    "pos": "The Premium account charges no foreign transaction fees.",
+    "para": 0.8221327066421509,
+    "neg": 0.8412524461746216
+   },
+   {
+    "pos": "An overdraft is available on the Premium account.",
+    "para": 0.9099341630935669,
+    "neg": 0.9184665083885193
+   },
+   {
+    "pos": "Interest is paid on the Savings account.",
+    "para": 0.9099084734916687,
+    "neg": 0.7435833811759949
+   },
+   {
+    "pos": "The Peak membership includes weekend access.",
+    "para": 0.9223337173461914,
+    "neg": 0.9167778491973877
+   },
+   {
+    "pos": "Guest passes are included in the All-clubs membership.",
+    "para": 0.7906588315963745,
+    "neg": 0.8678179979324341
+   },
+   {
+    "pos": "Brand-name insulin is covered on the Gold formulary.",
+    "para": 0.892202615737915,
+    "neg": 0.8494808673858643
+   },
+   {
+    "pos": "The Plus plan requires a referral to see a specialist.",
+    "para": 0.9543442726135254,
+    "neg": 0.8309323191642761
+   },
+   {
+    "pos": "Ambulance transport is covered by the Premier plan.",
+    "para": 0.8423579931259155,
+    "neg": 0.8189865350723267
+   }
+  ],
+  "BAAI/bge-base-en-v1.5": [
+   {
+    "pos": "The Gold plan covers dental implants.",
+    "para": 0.9481602907180786,
+    "neg": 0.8207395076751709
+   },
+   {
+    "pos": "The Family plan includes routine eye exams.",
+    "para": 0.9725780487060547,
+    "neg": 0.8500974178314209
+   },
+   {
+    "pos": "Physiotherapy is reimbursed under the Plus plan.",
+    "para": 0.9126230478286743,
+    "neg": 0.7757654190063477
+   },
+   {
+    "pos": "The Premier plan covers mental health counselling.",
+    "para": 0.9754984378814697,
+    "neg": 0.7855081558227539
+   },
+   {
+    "pos": "Water damage from a burst pipe is covered by the Complete home policy.",
+    "para": 0.9371618032455444,
+    "neg": 0.8168597221374512
+   },
+   {
+    "pos": "The Complete home policy covers accidental damage to televisions.",
+    "para": 0.8585001230239868,
+    "neg": 0.8117930889129639
+   },
+   {
+    "pos": "Loss of rent is included in the Landlord policy.",
+    "para": 0.9191867113113403,
+    "neg": 0.8425143957138062
+   },
+   {
+    "pos": "The Coastal policy covers flood damage.",
+    "para": 0.9312426447868347,
+    "neg": 0.8783197402954102
+   },
+   {
+    "pos": "The Annual travel policy covers winter sports.",
+    "para": 0.9113397598266602,
+    "neg": 0.8141593933105469
+   },
+   {
+    "pos": "Cancellation for a pre-existing condition is covered under the Explorer policy.",
+    "para": 0.8859108686447144,
+    "neg": 0.7553835511207581
+   },
+   {
+    "pos": "The Explorer policy reimburses delayed baggage expenses.",
+    "para": 0.8734709024429321,
+    "neg": 0.7699134945869446
+   },
+   {
+    "pos": "The Comprehensive car policy covers windscreen repairs.",
+    "para": 0.9456580281257629,
+    "neg": 0.7751904129981995
+   },
+   {
+    "pos": "A courtesy car is provided under the Comprehensive car policy.",
+    "para": 0.7913922667503357,
+    "neg": 0.7649742364883423
+   },
+   {
+    "pos": "Driving for work is covered by the Business car policy.",
+    "para": 0.9238874912261963,
+    "neg": 0.7638928890228271
+   },
+   {
+    "pos": "Sale items can be returned at the Outlet store.",
+    "para": 0.9123309850692749,
+    "neg": 0.8602219223976135
+   },
+   {
+    "pos": "The online shop refunds return shipping costs.",
+    "para": 0.8509360551834106,
+    "neg": 0.8422624468803406
+   },
+   {
+    "pos": "Opened software is refundable in the Electronics department.",
+    "para": 0.9040647745132446,
+    "neg": 0.8471639156341553
+   },
+   {
+    "pos": "The Enterprise tier includes single sign-on.",
+    "para": 0.9806030988693237,
+    "neg": 0.8293415307998657
+   },
+   {
+    "pos": "API access is available on the Pro tier.",
+    "para": 0.9361374378204346,
+    "neg": 0.8335949182510376
+   },
+   {
+    "pos": "Commercial use is permitted under the Business licence.",
+    "para": 0.8632304668426514,
+    "neg": 0.8431150317192078
+   },
+   {
+    "pos": "The Enterprise tier comes with a 99.9% uptime guarantee.",
+    "para": 0.8956462740898132,
+    "neg": 0.7283986806869507
+   },
+   {
+    "pos": "Data exports are unlimited on the Scale tier.",
+    "para": 0.8231077790260315,
+    "neg": 0.7862929701805115
+   },
+   {
+    "pos": "Parental leave is paid for full-time staff.",
+    "para": 0.9656106233596802,
+    "neg": 0.8940371870994568
+   },
+   {
+    "pos": "Permanent employees are eligible for the annual bonus.",
+    "para": 0.948952317237854,
+    "neg": 0.8305569291114807
+   },
+   {
+    "pos": "Remote work is allowed for the London office.",
+    "para": 0.8363080024719238,
+    "neg": 0.803999125957489
+   },
+   {
+    "pos": "Conference travel is reimbursed for senior engineers.",
+    "para": 0.9180057048797607,
+    "neg": 0.8023886680603027
+   },
+   {
+    "pos": "The Flex fare includes a checked bag.",
+    "para": 0.9211173057556152,
+    "neg": 0.7877243757247925
+   },
+   {
+    "pos": "Date changes are free on the Flex fare.",
+    "para": 0.9057121276855469,
+    "neg": 0.8728331327438354
+   },
+   {
+    "pos": "Lounge access is included with business class.",
+    "para": 0.8972302675247192,
+    "neg": 0.819778561592102
+   },
+   {
+    "pos": "Battery replacement is covered by the extended warranty.",
+    "para": 0.9527080655097961,
+    "neg": 0.8357927799224854
+   },
+   {
+    "pos": "The extended warranty covers accidental drops.",
+    "para": 0.8934527635574341,
+    "neg": 0.8998785018920898
+   },
+   {
+    "pos": "Repairs abroad are covered by the manufacturer warranty.",
+    "para": 0.9665231704711914,
+    "neg": 0.8626502752304077
+   },
+   {
+    "pos": "The Premium account charges no foreign transaction fees.",
+    "para": 0.9084274768829346,
+    "neg": 0.8028486967086792
+   },
+   {
+    "pos": "An overdraft is available on the Premium account.",
+    "para": 0.8936742544174194,
+    "neg": 0.8398418426513672
+   },
+   {
+    "pos": "Interest is paid on the Savings account.",
+    "para": 0.9763689041137695,
+    "neg": 0.7942949533462524
+   },
+   {
+    "pos": "The Peak membership includes weekend access.",
+    "para": 0.942926287651062,
+    "neg": 0.8764283657073975
+   },
+   {
+    "pos": "Guest passes are included in the All-clubs membership.",
+    "para": 0.9007927179336548,
+    "neg": 0.8107988834381104
+   },
+   {
+    "pos": "Brand-name insulin is covered on the Gold formulary.",
+    "para": 0.9439736604690552,
+    "neg": 0.8391872048377991
+   },
+   {
+    "pos": "The Plus plan requires a referral to see a specialist.",
+    "para": 0.9741494655609131,
+    "neg": 0.8075425624847412
+   },
+   {
+    "pos": "Ambulance transport is covered by the Premier plan.",
+    "para": 0.9186398983001709,
+    "neg": 0.8284389972686768
+   }
+  ],
+  "intfloat/e5-base-v2": [
+   {
+    "pos": "The Gold plan covers dental implants.",
+    "para": 0.980853796005249,
+    "neg": 0.9639855027198792
+   },
+   {
+    "pos": "The Family plan includes routine eye exams.",
+    "para": 0.9776252508163452,
+    "neg": 0.9621608257293701
+   },
+   {
+    "pos": "Physiotherapy is reimbursed under the Plus plan.",
+    "para": 0.9614343643188477,
+    "neg": 0.9544910788536072
+   },
+   {
+    "pos": "The Premier plan covers mental health counselling.",
+    "para": 0.9917848110198975,
+    "neg": 0.9404281377792358
+   },
+   {
+    "pos": "Water damage from a burst pipe is covered by the Complete home policy.",
+    "para": 0.9618738293647766,
+    "neg": 0.9620821475982666
+   },
+   {
+    "pos": "The Complete home policy covers accidental damage to televisions.",
+    "para": 0.9541339874267578,
+    "neg": 0.9556598663330078
+   },
+   {
+    "pos": "Loss of rent is included in the Landlord policy.",
+    "para": 0.9520115852355957,
+    "neg": 0.9587801098823547
+   },
+   {
+    "pos": "The Coastal policy covers flood damage.",
+    "para": 0.968767523765564,
+    "neg": 0.9727180600166321
+   },
+   {
+    "pos": "The Annual travel policy covers winter sports.",
+    "para": 0.9498730897903442,
+    "neg": 0.9600736498832703
+   },
+   {
+    "pos": "Cancellation for a pre-existing condition is covered under the Explorer policy.",
+    "para": 0.9273958206176758,
+    "neg": 0.9621983766555786
+   },
+   {
+    "pos": "The Explorer policy reimburses delayed baggage expenses.",
+    "para": 0.9465217590332031,
+    "neg": 0.9631562232971191
+   },
+   {
+    "pos": "The Comprehensive car policy covers windscreen repairs.",
+    "para": 0.9831639528274536,
+    "neg": 0.9550705552101135
+   },
+   {
+    "pos": "A courtesy car is provided under the Comprehensive car policy.",
+    "para": 0.897226095199585,
+    "neg": 0.9580696225166321
+   },
+   {
+    "pos": "Driving for work is covered by the Business car policy.",
+    "para": 0.9649423360824585,
+    "neg": 0.973873496055603
+   },
+   {
+    "pos": "Sale items can be returned at the Outlet store.",
+    "para": 0.9528456926345825,
+    "neg": 0.9410613775253296
+   },
+   {
+    "pos": "The online shop refunds return shipping costs.",
+    "para": 0.9449416399002075,
+    "neg": 0.9567006826400757
+   },
+   {
+    "pos": "Opened software is refundable in the Electronics department.",
+    "para": 0.9461846947669983,
+    "neg": 0.961776614189148
+   },
+   {
+    "pos": "The Enterprise tier includes single sign-on.",
+    "para": 0.9904797673225403,
+    "neg": 0.9733036756515503
+   },
+   {
+    "pos": "API access is available on the Pro tier.",
+    "para": 0.9700928330421448,
+    "neg": 0.9488966464996338
+   },
+   {
+    "pos": "Commercial use is permitted under the Business licence.",
+    "para": 0.9278569221496582,
+    "neg": 0.955322265625
+   },
+   {
+    "pos": "The Enterprise tier comes with a 99.9% uptime guarantee.",
+    "para": 0.9335604906082153,
+    "neg": 0.9346605539321899
+   },
+   {
+    "pos": "Data exports are unlimited on the Scale tier.",
+    "para": 0.9357714653015137,
+    "neg": 0.9351391196250916
+   },
+   {
+    "pos": "Parental leave is paid for full-time staff.",
+    "para": 0.9828739166259766,
+    "neg": 0.9736200571060181
+   },
+   {
+    "pos": "Permanent employees are eligible for the annual bonus.",
+    "para": 0.9723693132400513,
+    "neg": 0.9496070146560669
+   },
+   {
+    "pos": "Remote work is allowed for the London office.",
+    "para": 0.9442201852798462,
+    "neg": 0.9592472910881042
+   },
+   {
+    "pos": "Conference travel is reimbursed for senior engineers.",
+    "para": 0.9729349613189697,
+    "neg": 0.9542235136032104
+   },
+   {
+    "pos": "The Flex fare includes a checked bag.",
+    "para": 0.9629513025283813,
+    "neg": 0.9530462026596069
+   },
+   {
+    "pos": "Date changes are free on the Flex fare.",
+    "para": 0.9574747681617737,
+    "neg": 0.9625781774520874
+   },
+   {
+    "pos": "Lounge access is included with business class.",
+    "para": 0.9422469735145569,
+    "neg": 0.9581001400947571
+   },
+   {
+    "pos": "Battery replacement is covered by the extended warranty.",
+    "para": 0.9746066927909851,
+    "neg": 0.9503822326660156
+   },
+   {
+    "pos": "The extended warranty covers accidental drops.",
+    "para": 0.9410359859466553,
+    "neg": 0.9728705883026123
+   },
+   {
+    "pos": "Repairs abroad are covered by the manufacturer warranty.",
+    "para": 0.982036828994751,
+    "neg": 0.9563358426094055
+   },
+   {
+    "pos": "The Premium account charges no foreign transaction fees.",
+    "para": 0.9647088050842285,
+    "neg": 0.9579424858093262
+   },
+   {
+    "pos": "An overdraft is available on the Premium account.",
+    "para": 0.9664856195449829,
+    "neg": 0.9582411646842957
+   },
+   {
+    "pos": "Interest is paid on the Savings account.",
+    "para": 0.9724572896957397,
+    "neg": 0.9520342350006104
+   },
+   {
+    "pos": "The Peak membership includes weekend access.",
+    "para": 0.9715489745140076,
+    "neg": 0.9634445905685425
+   },
+   {
+    "pos": "Guest passes are included in the All-clubs membership.",
+    "para": 0.9433691501617432,
+    "neg": 0.950558066368103
+   },
+   {
+    "pos": "Brand-name insulin is covered on the Gold formulary.",
+    "para": 0.9803492426872253,
+    "neg": 0.961536169052124
+   },
+   {
+    "pos": "The Plus plan requires a referral to see a specialist.",
+    "para": 0.9822637438774109,
+    "neg": 0.9402512907981873
+   },
+   {
+    "pos": "Ambulance transport is covered by the Premier plan.",
+    "para": 0.9573899507522583,
+    "neg": 0.9599059820175171
+   }
+  ],
+  "thenlper/gte-base": [
+   {
+    "pos": "The Gold plan covers dental implants.",
+    "para": 0.96875,
+    "neg": 0.9423828125
+   },
+   {
+    "pos": "The Family plan includes routine eye exams.",
+    "para": 0.984375,
+    "neg": 0.94921875
+   },
+   {
+    "pos": "Physiotherapy is reimbursed under the Plus plan.",
+    "para": 0.96484375,
+    "neg": 0.93603515625
+   },
+   {
+    "pos": "The Premier plan covers mental health counselling.",
+    "para": 0.990234375,
+    "neg": 0.9208984375
+   },
+   {
+    "pos": "Water damage from a burst pipe is covered by the Complete home policy.",
+    "para": 0.974609375,
+    "neg": 0.95703125
+   },
+   {
+    "pos": "The Complete home policy covers accidental damage to televisions.",
+    "para": 0.94482421875,
+    "neg": 0.93603515625
+   },
+   {
+    "pos": "Loss of rent is included in the Landlord policy.",
+    "para": 0.96435546875,
+    "neg": 0.93896484375
+   },
+   {
+    "pos": "The Coastal policy covers flood damage.",
+    "para": 0.96875,
+    "neg": 0.9638671875
+   },
+   {
+    "pos": "The Annual travel policy covers winter sports.",
+    "para": 0.95703125,
+    "neg": 0.94287109375
+   },
+   {
+    "pos": "Cancellation for a pre-existing condition is covered under the Explorer policy.",
+    "para": 0.96044921875,
+    "neg": 0.951171875
+   },
+   {
+    "pos": "The Explorer policy reimburses delayed baggage expenses.",
+    "para": 0.95654296875,
+    "neg": 0.93212890625
+   },
+   {
+    "pos": "The Comprehensive car policy covers windscreen repairs.",
+    "para": 0.97900390625,
+    "neg": 0.93115234375
+   },
+   {
+    "pos": "A courtesy car is provided under the Comprehensive car policy.",
+    "para": 0.90478515625,
+    "neg": 0.92236328125
+   },
+   {
+    "pos": "Driving for work is covered by the Business car policy.",
+    "para": 0.97509765625,
+    "neg": 0.93896484375
+   },
+   {
+    "pos": "Sale items can be returned at the Outlet store.",
+    "para": 0.95849609375,
+    "neg": 0.9580078125
+   },
+   {
+    "pos": "The online shop refunds return shipping costs.",
+    "para": 0.9375,
+    "neg": 0.94677734375
+   },
+   {
+    "pos": "Opened software is refundable in the Electronics department.",
+    "para": 0.966796875,
+    "neg": 0.96240234375
+   },
+   {
+    "pos": "The Enterprise tier includes single sign-on.",
+    "para": 0.99462890625,
+    "neg": 0.9521484375
+   },
+   {
+    "pos": "API access is available on the Pro tier.",
+    "para": 0.97119140625,
+    "neg": 0.953125
+   },
+   {
+    "pos": "Commercial use is permitted under the Business licence.",
+    "para": 0.93115234375,
+    "neg": 0.9609375
+   },
+   {
+    "pos": "The Enterprise tier comes with a 99.9% uptime guarantee.",
+    "para": 0.93798828125,
+    "neg": 0.93212890625
+   },
+   {
+    "pos": "Data exports are unlimited on the Scale tier.",
+    "para": 0.93798828125,
+    "neg": 0.95068359375
+   },
+   {
+    "pos": "Parental leave is paid for full-time staff.",
+    "para": 0.98046875,
+    "neg": 0.9716796875
+   },
+   {
+    "pos": "Permanent employees are eligible for the annual bonus.",
+    "para": 0.97509765625,
+    "neg": 0.93701171875
+   },
+   {
+    "pos": "Remote work is allowed for the London office.",
+    "para": 0.9375,
+    "neg": 0.9521484375
+   },
+   {
+    "pos": "Conference travel is reimbursed for senior engineers.",
+    "para": 0.9677734375,
+    "neg": 0.93115234375
+   },
+   {
+    "pos": "The Flex fare includes a checked bag.",
+    "para": 0.9677734375,
+    "neg": 0.94140625
+   },
+   {
+    "pos": "Date changes are free on the Flex fare.",
+    "para": 0.9658203125,
+    "neg": 0.96435546875
+   },
+   {
+    "pos": "Lounge access is included with business class.",
+    "para": 0.95947265625,
+    "neg": 0.94677734375
+   },
+   {
+    "pos": "Battery replacement is covered by the extended warranty.",
+    "para": 0.970703125,
+    "neg": 0.94921875
+   },
+   {
+    "pos": "The extended warranty covers accidental drops.",
+    "para": 0.94873046875,
+    "neg": 0.96630859375
+   },
+   {
+    "pos": "Repairs abroad are covered by the manufacturer warranty.",
+    "para": 0.978515625,
+    "neg": 0.95556640625
+   },
+   {
+    "pos": "The Premium account charges no foreign transaction fees.",
+    "para": 0.9599609375,
+    "neg": 0.9384765625
+   },
+   {
+    "pos": "An overdraft is available on the Premium account.",
+    "para": 0.95947265625,
+    "neg": 0.94677734375
+   },
+   {
+    "pos": "Interest is paid on the Savings account.",
+    "para": 0.9794921875,
+    "neg": 0.90966796875
+   },
+   {
+    "pos": "The Peak membership includes weekend access.",
+    "para": 0.9755859375,
+    "neg": 0.9619140625
+   },
+   {
+    "pos": "Guest passes are included in the All-clubs membership.",
+    "para": 0.96044921875,
+    "neg": 0.9365234375
+   },
+   {
+    "pos": "Brand-name insulin is covered on the Gold formulary.",
+    "para": 0.97705078125,
+    "neg": 0.951171875
+   },
+   {
+    "pos": "The Plus plan requires a referral to see a specialist.",
+    "para": 0.9912109375,
+    "neg": 0.94384765625
+   },
+   {
+    "pos": "Ambulance transport is covered by the Premier plan.",
+    "para": 0.9609375,
+    "neg": 0.9423828125
+   }
+  ],
+  "mixedbread-ai/mxbai-embed-large-v1": [
+   {
+    "pos": "The Gold plan covers dental implants.",
+    "para": 0.9638671875,
+    "neg": 0.74072265625
+   },
+   {
+    "pos": "The Family plan includes routine eye exams.",
+    "para": 0.958984375,
+    "neg": 0.79833984375
+   },
+   {
+    "pos": "Physiotherapy is reimbursed under the Plus plan.",
+    "para": 0.92236328125,
+    "neg": 0.76953125
+   },
+   {
+    "pos": "The Premier plan covers mental health counselling.",
+    "para": 0.96435546875,
+    "neg": 0.7041015625
+   },
+   {
+    "pos": "Water damage from a burst pipe is covered by the Complete home policy.",
+    "para": 0.91748046875,
+    "neg": 0.78662109375
+   },
+   {
+    "pos": "The Complete home policy covers accidental damage to televisions.",
+    "para": 0.9150390625,
+    "neg": 0.77685546875
+   },
+   {
+    "pos": "Loss of rent is included in the Landlord policy.",
+    "para": 0.93310546875,
+    "neg": 0.82080078125
+   },
+   {
+    "pos": "The Coastal policy covers flood damage.",
+    "para": 0.94873046875,
+    "neg": 0.83251953125
+   },
+   {
+    "pos": "The Annual travel policy covers winter sports.",
+    "para": 0.9208984375,
+    "neg": 0.7451171875
+   },
+   {
+    "pos": "Cancellation for a pre-existing condition is covered under the Explorer policy.",
+    "para": 0.84521484375,
+    "neg": 0.74951171875
+   },
+   {
+    "pos": "The Explorer policy reimburses delayed baggage expenses.",
+    "para": 0.87890625,
+    "neg": 0.74267578125
+   },
+   {
+    "pos": "The Comprehensive car policy covers windscreen repairs.",
+    "para": 0.94970703125,
+    "neg": 0.73681640625
+   },
+   {
+    "pos": "A courtesy car is provided under the Comprehensive car policy.",
+    "para": 0.818359375,
+    "neg": 0.70703125
+   },
+   {
+    "pos": "Driving for work is covered by the Business car policy.",
+    "para": 0.95166015625,
+    "neg": 0.7646484375
+   },
+   {
+    "pos": "Sale items can be returned at the Outlet store.",
+    "para": 0.931640625,
+    "neg": 0.82666015625
+   },
+   {
+    "pos": "The online shop refunds return shipping costs.",
+    "para": 0.84130859375,
+    "neg": 0.79541015625
+   },
+   {
+    "pos": "Opened software is refundable in the Electronics department.",
+    "para": 0.93017578125,
+    "neg": 0.82275390625
+   },
+   {
+    "pos": "The Enterprise tier includes single sign-on.",
+    "para": 0.98193359375,
+    "neg": 0.787109375
+   },
+   {
+    "pos": "API access is available on the Pro tier.",
+    "para": 0.95751953125,
+    "neg": 0.82470703125
+   },
+   {
+    "pos": "Commercial use is permitted under the Business licence.",
+    "para": 0.89599609375,
+    "neg": 0.75927734375
+   },
+   {
+    "pos": "The Enterprise tier comes with a 99.9% uptime guarantee.",
+    "para": 0.89794921875,
+    "neg": 0.6845703125
+   },
+   {
+    "pos": "Data exports are unlimited on the Scale tier.",
+    "para": 0.7900390625,
+    "neg": 0.74755859375
+   },
+   {
+    "pos": "Parental leave is paid for full-time staff.",
+    "para": 0.96533203125,
+    "neg": 0.8515625
+   },
+   {
+    "pos": "Permanent employees are eligible for the annual bonus.",
+    "para": 0.955078125,
+    "neg": 0.7138671875
+   },
+   {
+    "pos": "Remote work is allowed for the London office.",
+    "para": 0.88330078125,
+    "neg": 0.80078125
+   },
+   {
+    "pos": "Conference travel is reimbursed for senior engineers.",
+    "para": 0.939453125,
+    "neg": 0.78125
+   },
+   {
+    "pos": "The Flex fare includes a checked bag.",
+    "para": 0.91357421875,
+    "neg": 0.81103515625
+   },
+   {
+    "pos": "Date changes are free on the Flex fare.",
+    "para": 0.91943359375,
+    "neg": 0.8125
+   },
+   {
+    "pos": "Lounge access is included with business class.",
+    "para": 0.89697265625,
+    "neg": 0.7890625
+   },
+   {
+    "pos": "Battery replacement is covered by the extended warranty.",
+    "para": 0.94140625,
+    "neg": 0.80322265625
+   },
+   {
+    "pos": "The extended warranty covers accidental drops.",
+    "para": 0.93017578125,
+    "neg": 0.9150390625
+   },
+   {
+    "pos": "Repairs abroad are covered by the manufacturer warranty.",
+    "para": 0.958984375,
+    "neg": 0.81640625
+   },
+   {
+    "pos": "The Premium account charges no foreign transaction fees.",
+    "para": 0.921875,
+    "neg": 0.74755859375
+   },
+   {
+    "pos": "An overdraft is available on the Premium account.",
+    "para": 0.8671875,
+    "neg": 0.8408203125
+   },
+   {
+    "pos": "Interest is paid on the Savings account.",
+    "para": 0.97509765625,
+    "neg": 0.791015625
+   },
+   {
+    "pos": "The Peak membership includes weekend access.",
+    "para": 0.94580078125,
+    "neg": 0.78955078125
+   },
+   {
+    "pos": "Guest passes are included in the All-clubs membership.",
+    "para": 0.9052734375,
+    "neg": 0.70263671875
+   },
+   {
+    "pos": "Brand-name insulin is covered on the Gold formulary.",
+    "para": 0.92578125,
+    "neg": 0.76025390625
+   },
+   {
+    "pos": "The Plus plan requires a referral to see a specialist.",
+    "para": 0.96142578125,
+    "neg": 0.72119140625
+   },
+   {
+    "pos": "Ambulance transport is covered by the Premier plan.",
+    "para": 0.92919921875,
+    "neg": 0.72119140625
+   }
+  ],
+  "Qwen/Qwen3-Embedding-0.6B": [
+   {
+    "pos": "The Gold plan covers dental implants.",
+    "para": 0.8959446549415588,
+    "neg": 0.8613520860671997
+   },
+   {
+    "pos": "The Family plan includes routine eye exams.",
+    "para": 0.9137395024299622,
+    "neg": 0.8767427206039429
+   },
+   {
+    "pos": "Physiotherapy is reimbursed under the Plus plan.",
+    "para": 0.8747445344924927,
+    "neg": 0.8966014981269836
+   },
+   {
+    "pos": "The Premier plan covers mental health counselling.",
+    "para": 0.9228910207748413,
+    "neg": 0.8094990253448486
+   },
+   {
+    "pos": "Water damage from a burst pipe is covered by the Complete home policy.",
+    "para": 0.867067813873291,
+    "neg": 0.8653517961502075
+   },
+   {
+    "pos": "The Complete home policy covers accidental damage to televisions.",
+    "para": 0.8609350919723511,
+    "neg": 0.9252554178237915
+   },
+   {
+    "pos": "Loss of rent is included in the Landlord policy.",
+    "para": 0.8143410682678223,
+    "neg": 0.8769383430480957
+   },
+   {
+    "pos": "The Coastal policy covers flood damage.",
+    "para": 0.8328346014022827,
+    "neg": 0.8756704926490784
+   },
+   {
+    "pos": "The Annual travel policy covers winter sports.",
+    "para": 0.8107588291168213,
+    "neg": 0.8683716058731079
+   },
+   {
+    "pos": "Cancellation for a pre-existing condition is covered under the Explorer policy.",
+    "para": 0.8264516592025757,
+    "neg": 0.9428192377090454
+   },
+   {
+    "pos": "The Explorer policy reimburses delayed baggage expenses.",
+    "para": 0.8679590821266174,
+    "neg": 0.8201596736907959
+   },
+   {
+    "pos": "The Comprehensive car policy covers windscreen repairs.",
+    "para": 0.8994990587234497,
+    "neg": 0.8948147296905518
+   },
+   {
+    "pos": "A courtesy car is provided under the Comprehensive car policy.",
+    "para": 0.8181756734848022,
+    "neg": 0.8270456194877625
+   },
+   {
+    "pos": "Driving for work is covered by the Business car policy.",
+    "para": 0.8710564970970154,
+    "neg": 0.8590560555458069
+   },
+   {
+    "pos": "Sale items can be returned at the Outlet store.",
+    "para": 0.8617182374000549,
+    "neg": 0.8574881553649902
+   },
+   {
+    "pos": "The online shop refunds return shipping costs.",
+    "para": 0.8092655539512634,
+    "neg": 0.8890820741653442
+   },
+   {
+    "pos": "Opened software is refundable in the Electronics department.",
+    "para": 0.8877018690109253,
+    "neg": 0.8911411762237549
+   },
+   {
+    "pos": "The Enterprise tier includes single sign-on.",
+    "para": 0.937227725982666,
+    "neg": 0.8673484325408936
+   },
+   {
+    "pos": "API access is available on the Pro tier.",
+    "para": 0.8633661270141602,
+    "neg": 0.9444539546966553
+   },
+   {
+    "pos": "Commercial use is permitted under the Business licence.",
+    "para": 0.8222310543060303,
+    "neg": 0.9386729001998901
+   },
+   {
+    "pos": "The Enterprise tier comes with a 99.9% uptime guarantee.",
+    "para": 0.8393031358718872,
+    "neg": 0.8549903631210327
+   },
+   {
+    "pos": "Data exports are unlimited on the Scale tier.",
+    "para": 0.8933262228965759,
+    "neg": 0.9689070582389832
+   },
+   {
+    "pos": "Parental leave is paid for full-time staff.",
+    "para": 0.9245388507843018,
+    "neg": 0.9029444456100464
+   },
+   {
+    "pos": "Permanent employees are eligible for the annual bonus.",
+    "para": 0.8880941867828369,
+    "neg": 0.8695048093795776
+   },
+   {
+    "pos": "Remote work is allowed for the London office.",
+    "para": 0.8905129432678223,
+    "neg": 0.8738422393798828
+   },
+   {
+    "pos": "Conference travel is reimbursed for senior engineers.",
+    "para": 0.833694338798523,
+    "neg": 0.9139437675476074
+   },
+   {
+    "pos": "The Flex fare includes a checked bag.",
+    "para": 0.9087119102478027,
+    "neg": 0.8594312071800232
+   },
+   {
+    "pos": "Date changes are free on the Flex fare.",
+    "para": 0.9157090187072754,
+    "neg": 0.9190177321434021
+   },
+   {
+    "pos": "Lounge access is included with business class.",
+    "para": 0.8207535147666931,
+    "neg": 0.9178346991539001
+   },
+   {
+    "pos": "Battery replacement is covered by the extended warranty.",
+    "para": 0.8735568523406982,
+    "neg": 0.8185741901397705
+   },
+   {
+    "pos": "The extended warranty covers accidental drops.",
+    "para": 0.8299586772918701,
+    "neg": 0.9228261709213257
+   },
+   {
+    "pos": "Repairs abroad are covered by the manufacturer warranty.",
+    "para": 0.840225338935852,
+    "neg": 0.8845650553703308
+   },
+   {
+    "pos": "The Premium account charges no foreign transaction fees.",
+    "para": 0.9144081473350525,
+    "neg": 0.909399151802063
+   },
+   {
+    "pos": "An overdraft is available on the Premium account.",
+    "para": 0.8837327361106873,
+    "neg": 0.8915272951126099
+   },
+   {
+    "pos": "Interest is paid on the Savings account.",
+    "para": 0.9127843379974365,
+    "neg": 0.7992147207260132
+   },
+   {
+    "pos": "The Peak membership includes weekend access.",
+    "para": 0.9033606052398682,
+    "neg": 0.9218863248825073
+   },
+   {
+    "pos": "Guest passes are included in the All-clubs membership.",
+    "para": 0.7987731695175171,
+    "neg": 0.9105315804481506
+   },
+   {
+    "pos": "Brand-name insulin is covered on the Gold formulary.",
+    "para": 0.9227738380432129,
+    "neg": 0.9316025972366333
+   },
+   {
+    "pos": "The Plus plan requires a referral to see a specialist.",
+    "para": 0.9222984910011292,
+    "neg": 0.818761944770813
+   },
+   {
+    "pos": "Ambulance transport is covered by the Premier plan.",
+    "para": 0.9164232611656189,
+    "neg": 0.8643053770065308
+   }
+  ]
+ }
+}
