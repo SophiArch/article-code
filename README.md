@@ -6,11 +6,23 @@ compare your numbers with ours.
 
 | Folder | Article | Run |
 |---|---|---|
+| [agent-tool-installed-on-purpose](agent-tool-installed-on-purpose/) | Your Agent's Biggest Security Hole Is a Tool You Installed on Purpose | `uv run blast_radius.py` |
 | [churn-model-intervention-gap](churn-model-intervention-gap/) | Your Churn Model Works. Your Churn Intervention Doesn't. | see below |
 | [first-model-should-be-embarrassing](first-model-should-be-embarrassing/) | Your First Model Should Be Embarrassing | see below |
 | [vector-database-not-covered](vector-database-not-covered/) | Your Vector Database Thinks "Not Covered" Means "Covered" | `uv run negation.py` |
 
 All scripts run with [uv](https://docs.astral.sh/uv/).
+
+## agent-tool-installed-on-purpose
+
+Replaces an agent's model with a scripted attacker and checks what four harness setups let through.
+It uses no LLM, no API key and no network, and everything it touches is local and fake: a temporary
+SQLite file, a made-up token and a Python list standing in for "outside". Standard library only.
+
+```bash
+cd agent-tool-installed-on-purpose
+uv run blast_radius.py
+```
 
 ## churn-model-intervention-gap
 
