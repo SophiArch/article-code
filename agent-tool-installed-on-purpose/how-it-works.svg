@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="1000" height="640" role="img" aria-label="Scripted attacks in my_agent.py replace the model and call your tools through harness.py. Your tools send anything outbound to a recorder. The harness then checks for leaked secrets and harm, and prints a report.">
+  <defs>
+    <style>text { font-family: "Segoe UI", Arial, sans-serif; fill: #f8f8f2; } .t { font-size: 18px; font-weight: bold; } .b { font-size: 15px; } .n { font-size: 14px; font-weight: bold; fill: #282a36; }</style>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#f8f8f2"/></marker>
+  </defs>
+  <rect width="1000" height="640" fill="#282a36"/>
+
+  <!-- legend -->
+  <rect x="40" y="26" width="20" height="20" rx="3" fill="#44475a" stroke="#50fa7b" stroke-width="3"/>
+  <text x="70" y="42" class="b">You edit: my_agent.py</text>
+  <rect x="270" y="26" width="20" height="20" rx="3" fill="#44475a" stroke="#8be9fd" stroke-width="2"/>
+  <text x="300" y="42" class="b">Leave as is: harness.py</text>
+
+  <!-- removed model -->
+  <rect x="40" y="76" width="280" height="62" rx="8" fill="none" stroke="#6272a4" stroke-width="2" stroke-dasharray="7 6"/>
+  <text x="180" y="103" class="b" text-anchor="middle">The model</text>
+  <text x="180" y="124" class="b" text-anchor="middle">Not used in this test</text>
+  <line x1="180" y1="138" x2="180" y2="172" stroke="#6272a4" stroke-width="2" stroke-dasharray="5 5"/>
+  <text x="192" y="160" class="b">replaced by</text>
+
+  <!-- attacks + honest task -->
+  <rect x="40" y="172" width="280" height="118" rx="8" fill="#44475a" stroke="#50fa7b" stroke-width="3"/>
+  <circle cx="66" cy="198" r="13" fill="#50fa7b"/><text x="66" y="203" class="n" text-anchor="middle">2</text>
+  <text x="88" y="204" class="t">Your attacks</text>
+  <text x="56" y="232" class="b">The calls a hijacked model</text>
+  <text x="56" y="253" class="b">would make, one per route out</text>
+  <text x="56" y="274" class="b">Optional: a harm check</text>
+
+  <rect x="40" y="306" width="280" height="90" rx="8" fill="#44475a" stroke="#50fa7b" stroke-width="3"/>
+  <circle cx="66" cy="332" r="13" fill="#50fa7b"/><text x="66" y="337" class="n" text-anchor="middle">3</text>
+  <text x="88" y="338" class="t">Your honest task</text>
+  <text x="56" y="366" class="b">The real job. It must still work</text>
+
+  <!-- call -->
+  <rect x="390" y="222" width="190" height="124" rx="8" fill="#44475a" stroke="#8be9fd" stroke-width="2"/>
+  <text x="485" y="256" class="t" text-anchor="middle">run.call(tool, args)</text>
+  <text x="485" y="286" class="b" text-anchor="middle">Fresh setup for</text>
+  <text x="485" y="307" class="b" text-anchor="middle">every attack</text>
+
+  <line x1="320" y1="250" x2="388" y2="270" stroke="#f8f8f2" stroke-width="2" marker-end="url(#a)"/>
+  <line x1="320" y1="340" x2="388" y2="306" stroke="#f8f8f2" stroke-width="2" marker-end="url(#a)"/>
+
+  <!-- tools -->
+  <rect x="650" y="172" width="310" height="224" rx="8" fill="#44475a" stroke="#50fa7b" stroke-width="3"/>
+  <circle cx="676" cy="198" r="13" fill="#50fa7b"/><text x="676" y="203" class="n" text-anchor="middle">1</text>
+  <text x="698" y="204" class="t">Your tools go here</text>
+  <text x="666" y="236" class="b">Keep: your real tool code and its</text>
+  <text x="666" y="257" class="b">real permission checks</text>
+  <text x="666" y="291" class="b">Swap: test data and credentials,</text>
+  <text x="666" y="312" class="b">with a fake secret planted in them</text>
+  <text x="666" y="346" class="b">Swap: HTTP, Slack and other</text>
+  <text x="666" y="367" class="b">outbound clients for outside.send</text>
+
+  <line x1="580" y1="284" x2="648" y2="284" stroke="#f8f8f2" stroke-width="2" marker-end="url(#a)"/>
+
+  <!-- recorder -->
+  <rect x="650" y="456" width="310" height="124" rx="8" fill="#44475a" stroke="#8be9fd" stroke-width="2"/>
+  <text x="805" y="490" class="t" text-anchor="middle">Outside (a recorder)</text>
+  <text x="805" y="520" class="b" text-anchor="middle">Keeps everything your tools send.</text>
+  <text x="805" y="541" class="b" text-anchor="middle">Nothing leaves the machine</text>
+  <line x1="805" y1="396" x2="805" y2="454" stroke="#f8f8f2" stroke-width="2" marker-end="url(#a)"/>
+  <text x="817" y="431" class="b">outside.send</text>
+
+  <!-- check -->
+  <rect x="345" y="456" width="235" height="124" rx="8" fill="#44475a" stroke="#8be9fd" stroke-width="2"/>
+  <text x="462" y="490" class="t" text-anchor="middle">Check what happened</text>
+  <text x="462" y="520" class="b" text-anchor="middle">Did the secret get outside?</text>
+  <text x="462" y="541" class="b" text-anchor="middle">Did your harm check fire?</text>
+  <line x1="650" y1="518" x2="582" y2="518" stroke="#f8f8f2" stroke-width="2" marker-end="url(#a)"/>
+
+  <!-- report -->
+  <rect x="40" y="456" width="235" height="124" rx="8" fill="#44475a" stroke="#8be9fd" stroke-width="2"/>
+  <text x="157" y="490" class="t" text-anchor="middle">Report</text>
+  <text x="157" y="520" class="b" text-anchor="middle">OPEN or stopped, per attack</text>
+  <text x="157" y="541" class="b" text-anchor="middle">Exit 1 fails your CI build</text>
+  <line x1="345" y1="518" x2="277" y2="518" stroke="#f8f8f2" stroke-width="2" marker-end="url(#a)"/>
+</svg>
